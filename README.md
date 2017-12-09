@@ -10,7 +10,7 @@ Segue uma breve descrição dos arquivos:
 * **go.lex** = Especificações necessárias do Jflex
 * **helloworld.go** = O código fonte em go a ser analisado
 
-### Progresso Atual
+## Progresso Atual
 
 **Análise Léxica** :red_circle:
 
