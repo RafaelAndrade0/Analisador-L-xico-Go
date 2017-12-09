@@ -13,7 +13,9 @@ Segue uma breve descrição dos arquivos:
 ### Progresso Atual
 
 **Análise Léxica** :red_circle:
+
 **Análise Sintática** :red_circle:
+
 **Análise Semântica** :red_circle:
 
 :zzz: :zzz: :zzz: :zzz:
