@@ -35,10 +35,12 @@ public class LexicalAnalyzer {
    * Translates characters to character classes
    */
   private static final String ZZ_CMAP_PACKED = 
-    "\11\0\1\3\1\3\1\17\1\17\1\17\22\0\1\3\17\0\1\1"+
-    "\11\2\47\0\1\12\1\0\1\13\1\0\1\16\1\0\1\15\1\0"+
-    "\1\4\1\0\1\14\1\0\1\5\1\0\1\7\1\6\1\0\1\10"+
-    "\1\0\1\11\7\0\1\3\10\0\1\17\u1fa2\0\1\17\1\17\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\udfe6\0";
+    "\11\0\1\4\1\4\1\5\1\5\1\5\22\0\1\4\6\0\1\0"+
+    "\1\25\1\26\4\0\1\0\1\0\12\2\7\0\32\1\3\0\1\7"+
+    "\1\3\1\0\1\16\1\1\1\17\1\1\1\22\1\23\1\21\1\1"+
+    "\1\10\1\1\1\20\1\1\1\11\1\24\1\13\1\12\1\1\1\14"+
+    "\1\1\1\15\6\1\1\6\1\0\1\6\7\0\1\5\u1fa2\0\1\5"+
+    "\1\5\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\udfe6\0";
 
   /** 
    * Translates characters to character classes
@@ -51,10 +53,11 @@ public class LexicalAnalyzer {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\1\0\1\1\2\2\1\3\2\1\10\0\1\4\1\0";
+    "\1\1\1\2\1\3\1\1\1\4\1\5\1\2\3\3"+
+    "\1\6\1\7\1\5\1\3\1\10\11\3\1\5\1\3";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[17];
+    int [] result = new int[26];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -79,12 +82,13 @@ public class LexicalAnalyzer {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\20\0\20\0\40\0\20\0\60\0\100\0\120"+
-    "\0\140\0\160\0\200\0\220\0\240\0\260\0\300\0\20"+
-    "\0\320";
+    "\0\0\0\27\0\56\0\105\0\27\0\27\0\134\0\163"+
+    "\0\212\0\241\0\27\0\27\0\134\0\270\0\56\0\317"+
+    "\0\346\0\375\0\u0114\0\u012b\0\u0142\0\u0159\0\u0170\0\u0187"+
+    "\0\56\0\u019e";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[17];
+    int [] result = new int[26];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -107,14 +111,23 @@ public class LexicalAnalyzer {
   private static final int [] ZZ_TRANS = zzUnpackTrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\2\1\3\1\4\1\5\1\6\1\2\1\7\10\2"+
-    "\22\0\2\4\22\0\1\10\24\0\1\11\13\0\1\12"+
-    "\24\0\1\13\13\0\1\14\24\0\1\15\13\0\1\16"+
-    "\21\0\1\17\16\0\1\20\23\0\1\21\20\0\1\20"+
-    "\1\0";
+    "\1\2\1\3\1\4\1\2\1\5\1\0\1\6\1\7"+
+    "\1\10\1\11\1\12\12\3\1\13\1\14\30\0\3\3"+
+    "\4\0\15\3\4\0\1\4\25\0\1\15\6\0\15\15"+
+    "\3\0\3\3\4\0\1\3\1\16\11\3\1\17\1\3"+
+    "\3\0\3\3\4\0\6\3\1\20\6\3\3\0\3\3"+
+    "\4\0\6\3\1\21\6\3\3\0\3\3\4\0\2\3"+
+    "\1\22\12\3\3\0\3\3\4\0\1\23\14\3\3\0"+
+    "\3\3\4\0\7\3\1\24\5\3\3\0\3\3\4\0"+
+    "\3\3\1\25\11\3\3\0\3\3\4\0\14\3\1\17"+
+    "\3\0\3\3\4\0\10\3\1\26\4\3\3\0\3\3"+
+    "\4\0\4\3\1\27\10\3\3\0\3\3\4\0\6\3"+
+    "\1\30\6\3\3\0\3\3\4\0\5\3\1\31\7\3"+
+    "\3\0\3\3\4\0\11\3\1\32\3\3\3\0\3\3"+
+    "\4\0\12\3\1\17\2\3\2\0";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[224];
+    int [] result = new int[437];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -152,10 +165,10 @@ public class LexicalAnalyzer {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\1\0\2\11\1\1\1\11\2\1\10\0\1\11\1\0";
+    "\1\1\1\11\2\1\2\11\4\1\2\11\16\1";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[17];
+    int [] result = new int[26];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -259,7 +272,7 @@ private GoToken createToken(String name, String value) {
     char [] map = new char[0x110000];
     int i = 0;  /* index in packed string  */
     int j = 0;  /* index in unpacked array */
-    while (i < 112) {
+    while (i < 136) {
       int  count = packed.charAt(i++);
       char value = packed.charAt(i++);
       do map[j++] = value; while (--count > 0);
@@ -610,21 +623,37 @@ private GoToken createToken(String name, String value) {
       else {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1: 
-            { throw new RuntimeException("Caractere inválido " + yytext() + " na linha " + yyline + ", coluna " +yycolumn);
-            }
-          case 5: break;
-          case 2: 
             { return createToken("inteiro", yytext());
             }
-          case 6: break;
+          case 9: break;
+          case 2: 
+            { throw new RuntimeException("Caractere inválido " + yytext() + " na linha " + yyline + ", coluna " +yycolumn);
+            }
+          case 10: break;
           case 3: 
+            { return createToken(yytext(), "identifier");
+            }
+          case 11: break;
+          case 4: 
             { /**/
             }
-          case 7: break;
-          case 4: 
+          case 12: break;
+          case 5: 
             { return createToken(yytext(), "");
             }
-          case 8: break;
+          case 13: break;
+          case 6: 
+            { return createToken("LEFT_Parentheses", yytext());
+            }
+          case 14: break;
+          case 7: 
+            { return createToken("RIGHT_Parentheses", yytext());
+            }
+          case 15: break;
+          case 8: 
+            { return createToken(yytext(), "Reserved Word");
+            }
+          case 16: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }
