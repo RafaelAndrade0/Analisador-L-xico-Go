@@ -1,7 +1,7 @@
 /* Essa clase  executa a Analise Léxica */
 
 
-package analisador.lexico.go;
+package analiseLexica;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ public class GoLexicalAnalyzer {
 	public static void main(String[] args) throws IOException {
 		
 		String rootPath = Paths.get("").toAbsolutePath(). toString();
-		String subPath = "\\src\\analisador\\lexico\\go\\";
+		String subPath = "\\src\\inputExamples\\";
 		
 		String path = rootPath + subPath + "helloWorld.go";
 		
@@ -21,7 +21,7 @@ public class GoLexicalAnalyzer {
 		GoToken token;
 		
 		while ((token = lexical.yylex()) != null) {
-            System.out.println("<" + token.name + ",, " + token.value + "> (" + token.line + " - " 
+            System.out.println("<" + token.name + ", " + token.value + "> (" + token.line + " - " 
             		+ token.column + ")");
         }
 	}
