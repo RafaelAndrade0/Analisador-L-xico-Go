@@ -5,13 +5,16 @@ package analisador.lexico.go;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Paths;
 
 public class GoLexicalAnalyzer {
 	
 	public static void main(String[] args) throws IOException {
 		
-		// todo: Tornar o path dinamico
-		String path = "/home/rafael/eclipse-workspace/AnalisadorLexico/src/analisador/lexico/go/helloWorld.go";
+		String rootPath = Paths.get("").toAbsolutePath(). toString();
+		String subPath = "\\src\\analisador\\lexico\\go\\";
+		
+		String path = rootPath + subPath + "helloWorld.go";
 		
 		LexicalAnalyzer lexical = new LexicalAnalyzer(new FileReader(path));
 		

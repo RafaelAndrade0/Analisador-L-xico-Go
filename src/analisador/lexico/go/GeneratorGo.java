@@ -3,12 +3,15 @@
 package analisador.lexico.go;
 
 import java.io.File;
+import java.nio.file.Paths;
 
 public class GeneratorGo {
 	public static void main(String[] args) {
 		
-		// todo: Tornar o path dinamico
-		String path = "/home/rafael/eclipse-workspace/AnalisadorLexico/src/analisador/lexico/go/go.lex";
+		String rootPath = Paths.get("").toAbsolutePath(). toString();
+		String subPath = "\\src\\analisador\\lexico\\go\\";
+		
+		String path = rootPath + subPath + "go.lex";
 		
 		File source = new File(path);
 		
