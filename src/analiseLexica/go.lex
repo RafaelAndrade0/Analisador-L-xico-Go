@@ -1,4 +1,4 @@
-package analisador.lexico.go;
+package analiseLexica;
 
 import java_cup.runtime.*;
 
@@ -20,6 +20,7 @@ private GoToken createToken(String name, String value) {
 %column
 
 /* Pattern Definitions */
+
 
 letter          = [A-Za-z]
 digit           = [0-9]

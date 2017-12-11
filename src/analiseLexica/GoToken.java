@@ -1,4 +1,4 @@
-package analisador.lexico.go;
+package analiseLexica;
 
 public class GoToken {
 	
